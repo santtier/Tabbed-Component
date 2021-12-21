@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tabs</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="tabby">
+      <div role="tablist" aria-label="Virtual pets">
+        <button
+          role="tab"
+          aria-selected="true"
+          data-theme="digimon"
+          data-target="digimon"
+        >
+          Digimon
+        </button>
+        <button
+          role="tab"
+          data-theme="pokemon"
+          data-target="pokemon"
+          tabindex="-1"
+        >
+          Pokemon
+        </button>
+        <button
+          role="tab"
+          data-theme="tamagotchi"
+          data-target="tamagotchi"
+          tabindex="-1"
+        >
+          Tamagotchi
+        </button>
+      </div>
+
+      <div class="tabpanels">
+        <section
+          role="tabpanel"
+          tabindex="-1"
+          data-theme="digimon"
+          aria-labelledby="digimon"
+        >
+          <img src="images/digimon.png" alt="Digimon" />
+          <h2 id="digimon">Digimon</h2>
+          <p>
+            Digimon, short for "Digital Monsters", is a Japanese media franchise
+            encompassing virtual pet toys, anime, manga, video games, films and
+            a trading card game. The franchise focuses on Digimon creatures,
+            which are monsters living in a "Digital World", a parallel universe
+            that originated from Earth's various communication networks.
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/Digimon">
+              More about Digimon &rarr;
+            </a>
+          </p>
+        </section>
+
+        <section
+          role="tabpanel"
+          tabindex="-1"
+          data-theme="pokemon"
+          aria-labelledby="pokemon"
+          hidden
+        >
+          <img src="images/pokemon.png" alt="Pokemon" />
+          <h2 id="pokemon">Pokémon</h2>
+          <p>
+            Pokémon also known as Pocket Monsters in Japan, is a media franchise
+            managed by The Pokémon Company, a Japanese consortium between
+            Nintendo, Game Freak, and Creatures. The franchise copyright is
+            shared by all three companies, but Nintendo is the sole owner of the
+            trademark.
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/Pokémon">
+              More about Pokemon &rarr;
+            </a>
+          </p>
+        </section>
+
+        <section
+          role="tabpanel"
+          tabindex="-1"
+          data-theme="tamagotchi"
+          aria-labelledby="tamagotchi"
+          hidden
+        >
+          <img src="images/tamagotchi.png" alt="Tamagotchi" />
+          <h2 id="tamagotchi">Tamagotchi</h2>
+          <p>
+            The Tamagotchi is a handheld digital pet, created in Japan by
+            Akihiro Yokoi of Bandai. It was released by Bandai on November 23,
+            1996 in Japan and May 1, 1997 in the rest of the world, quickly
+            becoming one of the biggest toy fads of the 1990s and early 2000s.
+            As of 2010, over 76 million Tamagotchis had been sold worldwide.
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/Tamagotchi">
+              More about Tamagotchi &rarr;
+            </a>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
